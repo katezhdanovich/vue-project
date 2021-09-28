@@ -15,7 +15,7 @@
                     <td>{{ element.productName }}</td>
                     <td>{{ "$" + element.unitPrice.toFixed(2)}}</td>
                     <td>{{ element.inStock }}</td>
-                    <td>{{ element.discontied }}</td>
+                    <td>{{ element.discontinued }}</td>
                     <td>
                         <b-button @click="showEditModal(index)" v-b-modal.modal-edit style="margin: 0 5px">Edit</b-button>
                         <b-button @click="showDeleteModal(index)" v-b-modal.modal-delete style="margin: 0 5px">Delete</b-button>

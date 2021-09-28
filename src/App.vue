@@ -24,10 +24,10 @@
         data() {
             return {
                 info: [
-                    { productName: "Product 1", unitPrice: 3, inStock: 7, discontied: true},
-                    { productName: "Product 2", unitPrice: 4, inStock: 0, discontied: false},
-                    { productName: "Product 3", unitPrice: 32, inStock: 15, discontied: true},
-                    { productName: "Product 4", unitPrice: 3, inStock: 8, discontied: true}
+                    { productName: "Product 1", unitPrice: 3, inStock: 7, discontinued: true},
+                    { productName: "Product 2", unitPrice: 4, inStock: 0, discontinued: false},
+                    { productName: "Product 3", unitPrice: 32, inStock: 15, discontinued: true},
+                    { productName: "Product 4", unitPrice: 3, inStock: 8, discontinued: true}
                 ],
                 updatedIndex: -1,
                 deletedIndex: -1
@@ -49,7 +49,7 @@
                 this.info[this.updatedIndex].productName = data.productName
                 this.info[this.updatedIndex].unitPrice = data.unitPrice
                 this.info[this.updatedIndex].inStock = data.inStock
-                this.info[this.updatedIndex].discontied = data.discontied
+                this.info[this.updatedIndex].discontinued = data.discontinued
                 this.updatedIndex = -1
             },
             saveItem(data){

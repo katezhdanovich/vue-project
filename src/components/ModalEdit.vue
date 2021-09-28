@@ -16,7 +16,7 @@
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" v-model="sale" id="sale">
-                    <label class="form-check-label" for="sale">Discontied</label>
+                    <label class="form-check-label" for="sale">Discontinued</label>
                 </div>
             </form>
         </b-modal>
@@ -45,7 +45,7 @@
                 this.name = info.productName
                 this.price = info.unitPrice
                 this.count = info.inStock
-                this.sale = info.discontied
+                this.sale = info.discontinued
             },
 
             checkFormValidity() {
@@ -73,7 +73,7 @@
                     productName: this.name,
                     unitPrice: this.price,
                     inStock: this.count,
-                    discontied: this.sale
+                    discontinued: this.sale
                 })
 
                 this.closeModal()
