@@ -15,8 +15,8 @@
                 </b-form-group>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" v-model="sale" id="sale">
-                    <label class="form-check-label" for="sale">Discontinued</label>
+                    <input class="form-check-input" type="checkbox" v-model="out" id="out">
+                    <label class="form-check-label" for="out">Discontinued</label>
                 </div>
             </form>
         </b-modal>
@@ -33,7 +33,7 @@
                 name: "",
                 price: "",
                 count: 0,
-                sale: false,
+                out: false,
 
                 nameState: null,
                 priceState: null,
@@ -59,7 +59,7 @@
                     productName: this.name,
                     unitPrice: this.price,
                     inStock: this.count,
-                    discontinued: this.sale
+                    discontinued: this.out
                 })
 
                 this.closeModal()
@@ -70,7 +70,7 @@
                 this.name = ""
                 this.price = ""
                 this.count = 0
-                this.sale = false
+                this.out = false
                 
                 this.nameState = null
                 this.priceState = null
