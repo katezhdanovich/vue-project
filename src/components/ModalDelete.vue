@@ -4,7 +4,6 @@
             <div>Are you sure you want to delete this record?</div>
         </b-modal>
     </div>
-
 </template>
 
 <script>
@@ -15,7 +14,6 @@
         methods:{
             deleteItem(){
                 this.$emit('delete-item')
-
             },
             closeModal(){
                 this.$emit('close-modal')

@@ -42,18 +42,11 @@
         },
         methods:{
             checkFormValidity() {
-                let isValid = true
-                
                 this.nameState = this.name ? true : false
-                isValid = isValid && this.nameState
-
                 this.priceState = (this.price ? true : false) && this.price >= 1
-                isValid = isValid && this.priceState 
-
                 this.countState = ((this.count === "") ? false : true) && this.count >= 0 && Number.isInteger(this.count)
-                isValid = isValid && this.countState
 
-                return isValid
+                return this.nameState && this.priceState && this.countState
             },
 
             saveItem(bvModalEvt){

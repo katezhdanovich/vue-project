@@ -24,10 +24,10 @@
         data() {
             return {
                 info: [
-                    { productName: "Product 1", unitPrice: 3, inStock: 7, discontinued: true},
-                    { productName: "Product 2", unitPrice: 4, inStock: 0, discontinued: false},
-                    { productName: "Product 3", unitPrice: 32, inStock: 15, discontinued: true},
-                    { productName: "Product 4", unitPrice: 3, inStock: 8, discontinued: true}
+                    { productName: "Product 1", unitPrice: 3, inStock: 7, discontinued: false},
+                    { productName: "Product 2", unitPrice: 4, inStock: 0, discontinued: true},
+                    { productName: "Product 3", unitPrice: 32, inStock: 15, discontinued: false},
+                    { productName: "Product 4", unitPrice: 3, inStock: 8, discontinued: false}
                 ],
                 updatedIndex: -1,
                 deletedIndex: -1
